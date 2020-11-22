@@ -22,13 +22,13 @@
   <PropertyGroup Label="UserMacros" Condition="'$(Platform)'=='Itanium'">
     <wxArchSuffix>_ia64</wxArchSuffix>
   </PropertyGroup>
-  <PropertyGroup Label="UserMacros" Condition="('$(Configuration)'=='Debug' or '$(Configuration)'=='DLL Debug') and '$(CharacterSet)'=='Unicode'">
+  <PropertyGroup Label="UserMacros" Condition="('$(Configuration)'=='Debug' or '$(Configuration)'=='DebugMT' or '$(Configuration)'=='DLL Debug') and '$(CharacterSet)'=='Unicode'">
     <wxSuffix>ud</wxSuffix>
   </PropertyGroup>
   <PropertyGroup Label="UserMacros" Condition="('$(Configuration)'=='Debug' or '$(Configuration)'=='DLL Debug') and '$(CharacterSet)'!='Unicode'">
     <wxSuffix>d</wxSuffix>
   </PropertyGroup>
-  <PropertyGroup Label="UserMacros" Condition="('$(Configuration)'=='Release' or '$(Configuration)'=='DLL Release') and '$(CharacterSet)'=='Unicode'">
+  <PropertyGroup Label="UserMacros" Condition="('$(Configuration)'=='Release' or '$(Configuration)'=='ReleaseMT' or '$(Configuration)'=='DLL Release') and '$(CharacterSet)'=='Unicode'">
     <wxSuffix>u</wxSuffix>
   </PropertyGroup>
   <PropertyGroup Label="UserMacros" Condition="('$(Configuration)'=='Release' or '$(Configuration)'=='DLL Release') and '$(CharacterSet)'!='Unicode'">
